@@ -11,4 +11,11 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+setopt interactivecomments
+export EDITOR="vim"
+export VISUAL=$EDITOR
+export PSQL_EDITOR='vim +"set syntax=sql" '
+export PGDATABASE='maildb'
+export PGHOST='noc.core'
+export PGUSER='mailer'
 
