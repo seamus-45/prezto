@@ -12,6 +12,7 @@ fi
 
 # Customize to your needs...
 setopt interactivecomments
+unsetopt SHARE_HISTORY
 export EDITOR="vim"
 export VISUAL=$EDITOR
 export PSQL_EDITOR='vim +"set syntax=sql" '
