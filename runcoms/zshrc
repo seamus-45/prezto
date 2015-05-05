@@ -19,5 +19,7 @@ export PSQL_EDITOR='vim +"set syntax=sql" '
 export PGDATABASE='maildb'
 export PGHOST='noc.core'
 export PGUSER='mailer'
+unset GREP_OPTIONS
 alias mailsql="vim +8 $HOME/mail.sql"
 alias coub_weekly="xdg-open http://coub.com/weekly/$(date +%Y)/$(date +%U)"
+alias fuck='eval $(thefuck $(fc -ln -1))'
