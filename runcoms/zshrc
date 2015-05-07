@@ -29,6 +29,7 @@ alias coub_weekly="xdg-open http://coub.com/weekly/$(date +%Y)/$(date +%U)"
 alias fuck='eval $(thefuck $(fc -ln -1))'
 alias less=${PAGER}
 alias zless=${PAGER}
+alias mc='ranger'
 
 # temporary fix
 unset GREP_OPTIONS
