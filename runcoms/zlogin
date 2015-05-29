@@ -15,8 +15,8 @@
 } &!
 
 # Print a random, hopefully interesting, adage.
-if (( $+commands[fortune] )); then
-  fortune -a ~/.fortunes | cowsay -f small
-  print
-fi
+#if (( $+commands[fortune] )); then
+#  fortune -a ~/.fortunes | cowsay -f small
+#  print
+#fi
 
