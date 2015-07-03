@@ -35,5 +35,5 @@ alias diff='/usr/bin/diff'
 # temporary fix
 unset GREP_OPTIONS
 
-# bind backward search key (next occurence)
-bindkey "?" history-incremental-search-backward
+# bind backward search key "CTRL+?" (next occurence)
+bindkey -M viins "^_" history-incremental-search-backward
