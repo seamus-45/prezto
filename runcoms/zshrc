@@ -31,6 +31,7 @@ alias zless=${PAGER}
 alias mc='/usr/bin/ranger'
 alias fuck='eval $(thefuck $(fc -ln -1))'
 alias diff='/usr/bin/diff'
+alias mplayer='/usr/bin/mpv'
 
 # temporary fix
 unset GREP_OPTIONS
