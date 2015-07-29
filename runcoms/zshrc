@@ -10,6 +10,9 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+if [[ -d "${HOME}/.gem/ruby/2.0.0/bin" ]]; then
+  export PATH="${PATH}:${HOME}/.gem/ruby/2.0.0/bin"
+fi
 # Customize to your needs...
 
 # use comments in command line
