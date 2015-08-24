@@ -14,6 +14,9 @@
   fi
 } &!
 
+# Autostart X at login on tty1
+[[ $EUID != 0 && -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec xinit -- -nolisten tcp -br +bs -dpi 96 vt$XDG_VTNR
+
 # Print a random, hopefully interesting, adage.
 #if (( $+commands[fortune] )); then
 #  fortune -a ~/.fortunes | cowsay -f small
