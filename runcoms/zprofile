@@ -50,7 +50,7 @@ path=(
 
 # add user's zsh completions from custom dir
 fpath=(
-  ${HOME}/.zprezto/completions
+  ${HOME}/.zprezto/zshcomp
   $fpath
 )
 
