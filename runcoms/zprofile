@@ -48,7 +48,7 @@ path=(
   $path
 )
 
-# add user's zsh completions from custom dir
+# Set user auto completions
 fpath=(
   ${HOME}/.zprezto/zshcomp
   $fpath
