@@ -48,6 +48,12 @@ path=(
   $path
 )
 
+# add user's zsh completions from custom dir
+fpath=(
+  ${HOME}/.zprezto/completions
+  $fpath
+)
+
 #
 # Less
 #
