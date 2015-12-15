@@ -44,3 +44,6 @@ alias spice-guest='spicy -h localhost -p 5900'
 bindkey -M viins "^_" history-incremental-search-backward
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 unset GREP_OPTIONS
+
+# completion for server-status.sh
+compdef _hosts server-status.sh
