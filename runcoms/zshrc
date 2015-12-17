@@ -18,8 +18,14 @@ fi
 # use comments in command line
 setopt interactivecomments
 
+# disable "file exists" warning with redirection
+setopt clobber
+
 # don't share history
 unsetopt SHARE_HISTORY
+
+# disable color diff output
+unfunction diff
 
 # editor and pager
 export EDITOR="/usr/bin/vim"
