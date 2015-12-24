@@ -44,7 +44,6 @@ alias mc='/usr/bin/ranger'
 alias fuck='eval $(thefuck $(fc -ln -1))'
 alias mplayer='/usr/bin/mpv'
 alias wgetcover='wget $1 -O cover.jpg'
-alias spice-guest='spicy -h localhost -p 5900'
 
 # bind backward search key "CTRL+?" (next occurence)
 bindkey -M viins "^_" history-incremental-search-backward
