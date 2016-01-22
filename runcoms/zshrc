@@ -37,7 +37,7 @@ export MPD_HOST="/home/fedotov_sv/.mpd/socket"
 
 # aliases
 alias mailsql="${EDITOR} +8 ${HOME}/mail.sql"
-alias coub_weekly="xdg-open http://coub.com/weekly/$(date +%Y)/$(date +%U)"
+alias coub_weekly="xdg-open http://coub.com/weekly/$(date +%Y)/$(expr $(date +%U) - 1)"
 alias less=${PAGER}
 alias zless=${PAGER}
 alias mc='/usr/bin/ranger'
