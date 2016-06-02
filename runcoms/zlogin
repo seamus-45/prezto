@@ -15,7 +15,7 @@
 } &!
 
 # Autostart X at login on tty1
-[[ $EUID != 0 && -z $DISPLAY && $(tty) = /dev/tty1 ]] && exec xinit -- -nolisten tcp -br +bs -dpi 96 vt$XDG_VTNR
+[[ $EUID != 0 && -z $DISPLAY && $(tty) = /dev/tty1 ]] && exec xinit -- -nolisten tcp -br +bs -dpi 96 vt$XDG_VTNR 2>&1 > $HOME/.xsession-errors
 # systemd variant
 #[[ $EUID != 0 && -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec xinit -- -nolisten tcp -br +bs -dpi 96 vt$XDG_VTNR
 

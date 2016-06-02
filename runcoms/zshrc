@@ -44,6 +44,8 @@ alias mc='/usr/bin/ranger'
 alias fuck='eval $(thefuck $(fc -ln -1))'
 alias mplayer='/usr/bin/mpv'
 alias wgetcover='wget $1 -O cover.jpg'
+alias weather='curl http://wttr.in/kurgan'
+alias ccat='pygmentize -g -O style=colorful,linenos=1'
 
 # bind backward search key "CTRL+?" (next occurence)
 bindkey -M viins "^_" history-incremental-search-backward
