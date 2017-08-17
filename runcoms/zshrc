@@ -32,13 +32,16 @@ export LIBVIRT_DEFAULT_URI="qemu:///system"
 export MPD_HOST="/home/fedotov_sv/.mpd/socket"
 
 # aliases
-alias mailsql="${EDITOR} +8 ${HOME}/mail.sql"
+alias mailsql="/usr/bin/vim +8 ${HOME}/mail.sql"
 alias coub_weekly="xdg-open http://coub.com/weekly/$(date +%Y)/$(expr $(date +%U) - 1)"
 alias wgetcover='wget $1 -O cover.jpg'
 alias ccat='pygmentize -g -O style=colorful,linenos=1'
 alias ls='/bin/ls -N --group-directories-first --color=auto'
 alias l='ls -1'
 alias ll='ls -1l'
+alias vim='nvim'
+alias nless='nvimpager -u NORC'
+alias lessn='nvimpager -u NORC -'
 
 # bind backward search key "CTRL+?" (next occurence)
 bindkey -M viins "^_" history-incremental-search-backward
