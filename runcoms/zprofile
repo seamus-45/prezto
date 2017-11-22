@@ -19,7 +19,7 @@ fi
 
 export EDITOR='nvim'
 export VISUAL='nvim'
-export PAGER='less'
+export PAGER='neopager.sh'
 export MANPAGER='nvim -u ~/.config/nvim/pager.vim -c "set ft=man" -'
 
 #

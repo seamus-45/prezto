@@ -42,6 +42,7 @@ alias ll='ls -1l'
 alias vim='nvim'
 alias nless='nvimpager -u NORC'
 alias lessn='nvimpager -u NORC -'
+alias -g N='2>/dev/null'
 
 # bind backward search key "CTRL+?" (next occurence)
 bindkey -M viins "^_" history-incremental-search-backward
