@@ -33,7 +33,7 @@ export MPD_HOST="/home/fedotov_sv/.mpd/socket"
 
 # aliases
 alias mailsql="/usr/bin/vim +8 ${HOME}/mail.sql"
-alias coub_weekly="xdg-open http://coub.com/weekly/$(date +%Y)/$(expr $(date +%U) - 1)"
+alias coub_weekly="xdg-open http://coub.com/weekly/$(date +%Y)/$(date +%U)"
 alias wgetcover='wget $1 -O cover.jpg'
 alias ccat='pygmentize -g -O style=colorful,linenos=1'
 alias ls='/bin/ls -N --group-directories-first --color=auto'
@@ -53,3 +53,9 @@ compdef _hosts server-status.sh
 
 # add local lua package paths
 eval `luarocks path`
+
+# termite
+if [[ $TERM == xterm-termite ]]; then
+  . /etc/profile.d/vte.sh
+  __vte_osc7
+fi
