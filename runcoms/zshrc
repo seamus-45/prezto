@@ -68,3 +68,11 @@ SPACESHIP_PROMPT_ORDER=(
   exit_code     # Exit code section
   char          # Prompt character
 )
+
+# show labels for ranger subshell and bitbake env (sorin theme)
+#PS1="${PS1%$\{editor*}%F{1}\${BUILDDIR:+ BITBAKE}%f\${editor_info[keymap]} "
+#
+#if [ -n "$RANGER_LEVEL" ]; then
+#    PS1="${PS1%$\{editor*} %F{3}RANGER%f\${editor_info[keymap]} "
+#fi
+
