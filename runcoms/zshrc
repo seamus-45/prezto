@@ -36,9 +36,6 @@ alias ccat='pygmentize -g -O style=colorful,linenos=1'
 alias ls='/bin/ls -N --group-directories-first --color=auto'
 alias l='ls -1'
 alias ll='ls -1l'
-alias vim='nvim'
-alias nless='nvimpager -u NORC'
-alias lessn='nvimpager -u NORC -'
 alias -g N='2>/dev/null'
 
 # bind backward search key "CTRL+?" (next occurence)
