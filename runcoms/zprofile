@@ -72,4 +72,4 @@ fi
 
 # To make Qt5 applications use the gtk2 style
 #export QT_QPA_PLATFORMTHEME=gtk2
-export QT_STYLE_OVERRIDE=kvantum
+#export QT_STYLE_OVERRIDE=kvantum

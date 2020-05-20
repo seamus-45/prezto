@@ -37,10 +37,14 @@ alias ls='/bin/ls -N --group-directories-first --color=auto'
 alias l='ls -1'
 alias ll='ls -1l'
 alias -g N='2>/dev/null'
+alias vim='/usr/bin/nvim'
 
 # bind backward search key "CTRL+?" (next occurence)
 bindkey -M viins "^_" history-incremental-search-backward
 unset GREP_OPTIONS
+
+# bind key for external command editor
+bindkey -M vicmd v edit-command-line
 
 # completion for server-status.sh
 compdef _hosts server-status.sh
