@@ -49,12 +49,6 @@ bindkey -M vicmd v edit-command-line
 # completion for server-status.sh
 compdef _hosts server-status.sh
 
-# termite
-if [[ $TERM == xterm-termite ]]; then
-  . /etc/profile.d/vte.sh
-  __vte_osc7
-fi
-
 # spaceship prompt options
 SPACESHIP_PROMPT_ORDER=(
   time          # Time stampts section
